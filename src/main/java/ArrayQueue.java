@@ -5,7 +5,7 @@ public class ArrayQueue<E> implements QueueADT<E> {
     private int front = 0;
     private int rear = 0;
 
-    @SuppressWarnings("unchecked")
+    @SupressWarnings("unchecked")
     public ArrayQueue(int capacity) {
         if (capacity <= 0) throw new IllegalArgumentException("capacity must be > 0");
         this.data = (E[]) new Object[capacity + 1];
